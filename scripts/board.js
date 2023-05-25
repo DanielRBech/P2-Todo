@@ -70,6 +70,7 @@ function handleExpand() {
       expandFormButton.style.backgroundColor = "rgba(75, 133, 225, 1)";
       taskForm.classList.remove("show");
       listDOMContainer.style.display = "flex"; // show list container
+      assigneeButton.style.display = "block"
     } catch (error) {
       console.error(error);
     }

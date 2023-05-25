@@ -9,10 +9,6 @@ logbookDataBase.loadDatabase();
 
 let clients = [];
 
-router.get('/logbook', (req, res) => {
-  res.sendFile(__dirname + '/views/logbook.html')
-});
-
 router.get("/GetLogbookEntry", (req, res) => {
   const logbookId = req.query.id; // Retrieve logbook entry ID from query parameter
   console.log("Finding logbook with _id:", logbookId);
